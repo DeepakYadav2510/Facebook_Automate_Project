@@ -1,4 +1,4 @@
-package pom_class;
+package test_pacage;
 
 public class Demo_test {
 

@@ -45,7 +45,8 @@ public class Utility_class {
 		DateFormat df=new SimpleDateFormat("_mm_ss_hh_dd_MM_yyyy");
 		String formatedDate =df.format(d);
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		;
+		
+		
 		File dest=new File("C:\\\\Users\\\\Dell\\\\Desktop\\\\ss\\\\"+tc_name+formatedDate+".png");
 		FileHandler.copy(src, dest);
 		

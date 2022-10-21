@@ -14,7 +14,7 @@ public class Base_class {
 	
 	
 	public static void Initialize_object() {
-		System.out.println("objects Initialize");
+		
 		util=new Utility_class(Driver);
 		Pom_Obj= new Pom_class_fb(Driver);
 	}

@@ -19,14 +19,14 @@ import org.openqa.selenium.io.FileHandler;
 
 
 public class Utility_class {
-	WebDriver driver;
+	WebDriver Driver;
 	
 	public Utility_class(WebDriver driver2) {
-		driver=driver2;
+		Driver=driver2;
 		
 		
 	}
-	Utility_class util=new Utility_class(driver);
+	Utility_class util=new Utility_class(Driver);
 	
 	public String Get_Excel_Data(int row,int cell1) throws EncryptedDocumentException, IOException {
 		FileInputStream file=new FileInputStream("C:\\Users\\kumaw\\OneDrive\\Desktop\\SSTUDY.xlsx");
@@ -44,7 +44,7 @@ public class Utility_class {
 		Date d=new Date();
 		DateFormat df=new SimpleDateFormat("_mm_ss_hh_dd_MM_yyyy");
 		String formatedDate =df.format(d);
-		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		File src=((TakesScreenshot)Driver).getScreenshotAs(OutputType.FILE);
 		
 		
 		File dest=new File("C:\\\\Users\\\\Dell\\\\Desktop\\\\ss\\\\"+tc_name+formatedDate+".png");

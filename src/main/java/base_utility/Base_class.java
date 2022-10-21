@@ -4,17 +4,19 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
 
+import pom_package.Pom_class_fb;
+
 public class Base_class {
 	
 	public static WebDriver Driver;
-//	public static Utility Object;
-//	public static test_Class object;
+	public static Utility_class util;
+	public static Pom_class_fb Pom_Obj;
 	
 	
 	public static void Initialize_object() {
 		System.out.println("objects Initialize");
-		
-		
+		util=new Utility_class(Driver);
+		Pom_Obj= new Pom_class_fb(Driver);
 	}
 	public static void Launch_the_browser(String Browsernames) {
 		switch (Browsernames) {

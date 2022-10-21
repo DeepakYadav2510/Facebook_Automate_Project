@@ -38,8 +38,8 @@ public class Pom_class_fb {
 		LogIn_Button_Input.click();
 	}
 	
-	public void Click_on_Forgot_password() {
-		 Forgot_password.click(); 
+	public String Click_on_Forgot_password() {
+		 return Forgot_password.getText(); 
 	}
 	
 	public String Get_welcome_text() {
@@ -47,8 +47,8 @@ public class Pom_class_fb {
 		
 	}
 	
-	public void Click_On_Create_Account() {
-		Create_New_Account.click();
+	public String Click_On_Create_Account() {
+		return Create_New_Account.getText();
 	}
 	
 	

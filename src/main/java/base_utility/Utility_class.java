@@ -30,7 +30,7 @@ public class Utility_class {
 	
 	public String Get_Excel_Data(int row,int cell1) throws EncryptedDocumentException, IOException {
 		FileInputStream file=new FileInputStream("C:\\Users\\kumaw\\OneDrive\\Desktop\\SSTUDY.xlsx");
-		Sheet sheet = WorkbookFactory.create(file).getSheet("Facebook_Login");
+		Sheet sheet = WorkbookFactory.create(file).getSheet("FB_Labo");
 		Cell cell = sheet.getRow(row).getCell(cell1);
 		try {
 			return
@@ -46,7 +46,7 @@ public class Utility_class {
 		String formatedDate =df.format(d);
 		File src=((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
 		;
-		File dest=new File("C:\\Users\\Dell\\Desktop\\ss\\"+tc_name+formatedDate+".png");
+		File dest=new File("C:\\\\Users\\\\Dell\\\\Desktop\\\\ss\\\\"+tc_name+formatedDate+".png");
 		FileHandler.copy(src, dest);
 		
 	}

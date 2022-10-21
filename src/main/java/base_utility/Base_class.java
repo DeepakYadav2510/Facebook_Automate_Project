@@ -31,7 +31,7 @@ public class Base_class {
 			Reporter.log("No browser found"+Browsernames,true);
 			break;
 		}
-		Driver.get("https://www.facebook.com/login/");
+		Driver.get("https://www.facebook.com/");
 	}
 	
 	public static void Quite_The_Browser() {

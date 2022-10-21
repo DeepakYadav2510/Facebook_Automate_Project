@@ -1,9 +1,5 @@
 package base_utility;
 
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.util.Properties;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Reporter;
@@ -46,15 +42,7 @@ public class Base_class {
 		Thread.sleep(sec * 1000);
 	}
 	
-	public static String getpropertyvalue(String key) throws IOException {
-		Properties pr = new Properties();
-		
-		FileInputStream file = new FileInputStream(System.getProperty("user.dir")+"/src/main/resources/Prop.properties");
-		
-		pr.load(file);
-		
-		return pr.getProperty(key);
-	}
-
+	
+	
 	
 }
